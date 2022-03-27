@@ -725,7 +725,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None)
         end = datetime.now()
         ms = (end - start).microseconds / 1000
-        await event.edit(f"𝙊𝙋!\n`{ms}` ms\n 🤖𝙁𝘼𝙎𝙏𝙀𝙎𝙏 𝙎𝙋𝘼𝙈🤖")
+        await event.edit(f"⚠️𝗖𝗢𝗕𝗥𝗔⚠️!\n`{ms}` ms\n 🌹𝐂𝐎𝐁𝐑𝐀 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🌹")
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -798,7 +798,7 @@ async def restart(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-        text = "[  𝙁𝘼𝙎𝙏𝙀𝙎𝙏 𝙎𝙋𝘼𝙈 ]\n\n𝐒𝐓𝐀𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐉𝐎𝐈𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.pjoin\n.leave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n𝐒𝐂𝐑𝐀𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.scrap\n\n𝐅𝐎𝐑 𝐍𝐄𝐄𝐃 𝐀𝐍𝐘 𝐇𝐄𝐋𝐏 𝐀𝐁𝐎𝐔𝐓 🆅🅸🅿 ❤️ 🆂🅿🅰🅼 🅱🅾🆃 visit here @Baapjiiiiiiiiii"
+        text = "[  𝐂𝐎𝐁𝐑𝐀 𝐀𝐋𝐈𝐕𝐄 ]\n\n𝐒𝐓𝐀𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐉𝐎𝐈𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.pjoin\n.leave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n𝐒𝐂𝐑𝐀𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.scrap\n\n𝐅𝐎𝐑 𝐍𝐄𝐄𝐃 𝐀𝐍𝐘 𝐇𝐄𝐋𝐏 𝐀𝐁𝐎𝐔𝐓 ᴄᴏʙʀᴀ sᴘᴀᴍ ʙᴏᴛ visit here @COBRA_CLAN"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
@@ -809,7 +809,7 @@ text = """ """
 print(text)
 print("")
 print(
-    "CONGRATULATIONS 🥳🥳..UR Spam Bots Ready to use"
+    "CONGRATULATIONS 🥳🥳..𝘠𝘰𝘶𝘳 Spam Bots Ready to use"
 )
 if len(sys.argv) not in (1, 3, 4):
     try:
