@@ -500,3 +500,396 @@ async def spam(e):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(sleeptime)
+else:
+            await e.reply(usage, parse_mode=None, link_preview=None)
+
+
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+async def spam(e):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
+    if e.sender_id in SMEX_USERS:
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+            return await e.reply(usage, parse_mode=None, link_preview=None)
+        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        smex = await e.get_reply_message()
+        if len(Ustad) == 2:
+            message = str(Ustad[1])
+            counter = int(Ustad[0])
+            for _ in range(counter):
+                async with e.client.action(e.chat_id, "typing"):
+                    if e.reply_to_msg_id:
+                        await smex.reply(message)
+                    else:
+                        await e.client.send_message(e.chat_id, message)
+                    await asyncio.sleep(0.0)
+        elif e.reply_to_msg_id and smex.media:
+            counter = int(Ustad[0])
+            for _ in range(counter):
+                async with e.client.action(e.chat_id, "document"):
+                    smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
+                    await gifspam(e, smex)
+                await asyncio.sleep(0.0)
+        elif e.reply_to_msg_id and smex.text:
+            message = smex.text
+            counter = int(Ustad[0])
+            for _ in range(counter):
+                async with e.client.action(e.chat_id, "typing"):
+                    await e.client.send_message(e.chat_id, message)
+                    await asyncio.sleep(0.0)
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None)
+
+
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.raggid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.raivvbd"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.ravvbid"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.raioohd"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.rafghjjid"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.raghhid"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.raidGjjj"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.rafggid"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\..chutjvhii"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.chuthijhyu7"))
+async def spam(e):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
+    if e.sender_id in SMEX_USERS:
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+            return await e.reply(usage, parse_mode=None, link_preview=None)
+        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        await e.get_reply_message()
+        if len(Ustad) == 2:
+            message = str(Ustad[1])
+            print(message)
+            a = await e.client.get_entity(message)
+            g = a.id
+            c = a.first_name
+            username = f"[{c}](tg://user?id={g})"
+            counter = int(Ustad[0])
+            for _ in range(counter):
+                reply = random.choice(RAID)
+                caption = f"{username} {reply}"
+                async with e.client.action(e.chat_id, "typing"):
+                    await e.client.send_message(e.chat_id, caption)
+                    await asyncio.sleep(0.3)
+        elif e.reply_to_msg_id:
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            c = b.first_name
+            counter = int(Ustad[0])
+            username = f"[{c}](tg://user?id={g})"
+            for _ in range(counter):
+                reply = random.choice(RAID)
+                caption = f"{username} {reply}"
+                async with e.client.action(e.chat_id, "typing"):
+                    await e.client.send_message(e.chat_id, caption)
+                    await asyncio.sleep(0.3)
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None)
+
+
+@idk.on(events.NewMessage(incoming=True))
+@ydk.on(events.NewMessage(incoming=True))
+@wdk.on(events.NewMessage(incoming=True))
+@hdk.on(events.NewMessage(incoming=True))
+@sdk.on(events.NewMessage(incoming=True))
+@adk.on(events.NewMessage(incoming=True))
+@bdk.on(events.NewMessage(incoming=True))
+@cdk.on(events.NewMessage(incoming=True))
+@edk.on(events.NewMessage(incoming=True))
+@ddk.on(events.NewMessage(incoming=True))
+async def _(event):
+    global que
+    queue = que.get(event.sender_id)
+    if not queue:
+        return
+    async with event.client.action(event.chat_id, "typing"):
+        await asyncio.sleep(0.3)
+    async with event.client.action(event.chat_id, "typing"):
+        await event.client.send_message(
+            entity=event.chat_id,
+            message="""{}""".format(random.choice(RRAID)),
+            reply_to=event.message.id,
+        )
+
+
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+async def _(e):
+    global que
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
+    if e.sender_id in SMEX_USERS:
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+            return await e.reply(usage, parse_mode=None, link_preview=None)
+        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        await e.get_reply_message()
+        if len(e.text) > 11:
+            message = str(Ustad[0])
+            a = await e.client.get_entity(message)
+            g = a.id
+            que[g] = []
+            qeue = que.get(g)
+            appendable = [g]
+            qeue.append(appendable)
+            text = "Activated Reply Raid"
+            await e.reply(text, parse_mode=None, link_preview=None)
+        elif e.reply_to_msg_id:
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            que[g] = []
+            qeue = que.get(g)
+            appendable = [g]
+            qeue.append(appendable)
+            text = "𝔸𝔹 𝔹𝕆𝕃 𝔹𝕊𝔻𝕂 𝕂𝔼"
+            await e.reply(text, parse_mode=None, link_preview=None)
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None)
+
+
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+async def _(e):
+    global que
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
+    if e.sender_id in SMEX_USERS:
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+            return await e.reply(usage, parse_mode=None, link_preview=None)
+        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        await e.get_reply_message()
+        if len(e.text) > 12:
+            message = str(Ustad[0])
+            a = await e.client.get_entity(message)
+            g = a.id
+            try:
+                queue = que.get(g)
+                queue.pop(0)
+            except Exception:
+                pass
+            text = "De-Activated Reply Raid"
+            await e.reply(text, parse_mode=None, link_preview=None)
+        elif e.reply_to_msg_id:
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            try:
+                queue = que.get(g)
+                queue.pop(0)
+            except Exception:
+                pass
+            text = "De-Activated Reply Raid"
+            await e.reply(text, parse_mode=None, link_preview=None)
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None)
+
+
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+async def ping(e):
+    if e.sender_id in SMEX_USERS:
+        start = datetime.now()
+        text = "Pong!"
+        event = await e.reply(text, parse_mode=None, link_preview=None)
+        end = datetime.now()
+        ms = (end - start).microseconds / 1000
+        await event.edit(f"𝙊𝙋!\n`{ms}` ms\n 🤖𝙁𝘼𝙎𝙏𝙀𝙎𝙏 𝙎𝙋𝘼𝙈🤖")
+
+
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\n𝙍𝙐𝙆 2 min baad krna ping 🔥🥵"
+        await e.reply(text, parse_mode=None, link_preview=None)
+        try:
+            await idk.disconnect()
+        except Exception:
+            pass
+        try:
+            await ydk.disconnect()
+        except Exception:
+            pass
+        try:
+            await wdk.disconnect()
+        except Exception:
+            pass
+        try:
+            await hdk.disconnect()
+        except Exception:
+            pass
+        try:
+            await sdk.disconnect()
+        except Exception:
+            pass
+        try:
+            await adk.disconnect()
+        except Exception:
+            pass
+        try:
+            await bdk.disconnect()
+        except Exception:
+            pass
+        try:
+            await cdk.disconnect()
+        except Exception:
+            pass
+        try:
+            await ddk.disconnect()
+        except Exception:
+            pass
+        try:
+            await edk.disconnect()
+        except Exception:
+            pass
+        os.execl(sys.executable, sys.executable, *sys.argv)
+        quit()
+
+
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+async def help(e):
+    if e.sender_id in SMEX_USERS:
+        text = "[  𝙁𝘼𝙎𝙏𝙀𝙎𝙏 𝙎𝙋𝘼𝙈 ]\n\n𝐒𝐓𝐀𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐉𝐎𝐈𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.pjoin\n.leave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n𝐒𝐂𝐑𝐀𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.scrap\n\n𝐅𝐎𝐑 𝐍𝐄𝐄𝐃 𝐀𝐍𝐘 𝐇𝐄𝐋𝐏 𝐀𝐁𝐎𝐔𝐓 🆅🅸🅿 ❤️ 🆂🅿🅰🅼 🅱🅾🆃 visit here @Baapjiiiiiiiiii"
+        await e.reply(text, parse_mode=None, link_preview=None)
+
+
+# --------------------------------------------------------------------------------------------------------------------------------
+
+text = """ """
+
+print(text)
+print("")
+print(
+    "CONGRATULATIONS 🥳🥳..UR Spam Bots Ready to use"
+)
+if len(sys.argv) not in (1, 3, 4):
+    try:
+        idk.disconnect()
+    except Exception:
+        pass
+    try:
+        ydk.disconnect()
+    except Exception:
+        pass
+    try:
+        wdk.disconnect()
+    except Exception:
+        pass
+    try:
+        hdk.disconnect()
+    except Exception:
+        pass
+    try:
+        sdk.disconnect()
+    except Exception:
+        pass
+    try:
+        adk.disconnect()
+    except Exception:
+        pass
+    try:
+        bdk.disconnect()
+    except Exception:
+        pass
+    try:
+        cdk.disconnect()
+    except Exception:
+        pass
+    try:
+        edk.disconnect()
+    except Exception:
+        pass
+    try:
+        ddk.disconnect()
+    except Exception:
+        pass
+else:
+    try:
+        idk.run_until_disconnected()
+    except Exception:
+        pass
+    try:
+        ydk.run_until_disconnected()
+    except Exception:
+        pass
+    try:
+        wdk.run_until_disconnected()
+    except Exception:
+        pass
+    try:
+        hdk.run_until_disconnected()
+    except Exception:
+        pass
+    try:
+        sdk.run_until_disconnected()
+    except Exception:
+        pass
+    try:
+        adk.run_until_disconnected()
+    except Exception:
+        pass
+    try:
+        bdk.run_until_disconnected()
+    except Exception:
+        pass
+    try:
+        cdk.run_until_disconnected()
+    except Exception:
+        pass
+    try:
+        edk.run_until_disconnected()
+    except Exception:
+        pass
+    try:
+        ddk.run_until_disconnected()
+    except Exception:
+        pass
