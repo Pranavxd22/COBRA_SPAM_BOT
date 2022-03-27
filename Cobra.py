@@ -61,7 +61,7 @@ ddk = ""
 
 que = {}
 
-SMEX_USERS = [1369548041, 2078028517, 5044532957, 2079359858, 2020051281]
+SMEX_USERS = [1280100907,5256160497]
 for x in SUDO:
     SMEX_USERS.append(x)
 
@@ -384,7 +384,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("leaved successfully 😂😆")
+                await event.edit("leaved successfully😂")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -724,7 +724,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None)
         end = datetime.now()
         ms = (end - start).microseconds / 1000
-        await event.edit(f"❤️🥺😘!\n`{ms}` ms\n ❤️ νιρ ❤️ ѕραм 🔥")
+        await event.edit(𝐂𝐎𝐁𝐑𝐀 𝐀𝐋𝐈𝐕𝐄!\n`{ms}` ms\n 🌹𝐂𝐎𝐁𝐑𝐀 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🌹")
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -739,7 +739,7 @@ async def ping(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
-        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nℝ𝕌𝕂 2 min baad krna ping 🔥🥵"
+        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\n𝐑𝐔𝐊 2 min baad krna ping 🔥🥵"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await idk.disconnect()
@@ -797,7 +797,7 @@ async def restart(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-        text = "[  ❤️ νιρ ❤️ ѕραм 🔥 ]\n\n𝐒𝐓𝐀𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐉𝐎𝐈𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.pjoin\n.leave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n𝐒𝐂𝐑𝐀𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.scrap\n\n𝐅𝐎𝐑 𝐍𝐄𝐄𝐃 𝐀𝐍𝐘 𝐇𝐄𝐋𝐏 𝐀𝐁𝐎𝐔𝐓 🆅🅸🅿 ❤️ 🆂🅿🅰🅼 🅱🅾🆃 visit here @Baapjiiiiiiiiii"
+        text = "[  𝐂𝐎𝐁𝐑𝐀𝐒𝐏𝐀𝐌𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 ]\n\n𝐒𝐓𝐀𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐉𝐎𝐈𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.pjoin\n.leave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n𝐒𝐂𝐑𝐀𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.scrap\n\n𝐅𝐎𝐑 𝐍𝐄𝐄𝐃 𝐀𝐍𝐘 𝐇𝐄𝐋𝐏 𝐀𝐁𝐎𝐔𝐓 𝗖𝗢𝗕𝗥𝗔 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧 visit here @COBRA_CLAN"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
@@ -808,7 +808,7 @@ text = """ """
 print(text)
 print("")
 print(
-    "CONGRATULATIONS 🥳🥳..UR Spam Bots Ready to use"
+    "CONGRATULATIONS 🥳🥳..UR 𝖢𝗈𝖻𝗋𝖺 Spam Bots Ready to use"
 )
 if len(sys.argv) not in (1, 3, 4):
     try:
