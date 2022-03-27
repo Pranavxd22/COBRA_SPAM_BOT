@@ -503,6 +503,8 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
 
+        
+
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
